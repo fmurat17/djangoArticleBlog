@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h2>Makale Güncelle</h2>
+    <hr>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button type = "submit" class = "btn btn-danger">Güncelle</button>
+    </form>
+{% endblock %}

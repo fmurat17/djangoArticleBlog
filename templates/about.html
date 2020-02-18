@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h2>Ben Fatih Murat. İTÜ'de bilgisayar mühendisliği okuyorum.</h2>
+    <ul>
+        {% for number in numbers %}
+            <li>{{ number }}</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}
